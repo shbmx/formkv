@@ -1,0 +1,37 @@
+{
+  "name": "formkv",
+  "version": "0.1.0",
+  "description": "Stand up a waitlist on Cloudflare Workers + KV from one command. No server, no database.",
+  "type": "module",
+  "bin": {
+    "formkv": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "formkv": "node dist/cli.js",
+    "test": "node --experimental-strip-types test/run.mjs",
+    "coverage": "c8 --reporter=text --src=dist --exclude='test/**' --all node test/run.mjs"
+  },
+  "keywords": [
+    "waitlist",
+    "cloudflare",
+    "workers",
+    "kv",
+    "signup"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "c8": "^12.0.0",
+    "typescript": "^5.7.2"
+  }
+}

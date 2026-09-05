@@ -1,0 +1,5 @@
+node_modules/
+dist/
+formkv.json
+formkv-worker.generated.js
+*.csv

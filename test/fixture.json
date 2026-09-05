@@ -1,0 +1,20 @@
+{
+  "name": "demo",
+  "accountId": "acc123",
+  "kvNamespaceId": "ns123",
+  "allowedOrigins": ["https://example.com", "https://www.example.com"],
+  "fields": [
+    { "name": "email", "type": "email", "required": true },
+    { "name": "building", "type": "text", "maxLength": 200 },
+    { "name": "source", "type": "choice", "options": ["hn", "twitter", "friend"] }
+  ],
+  "honeypot": "company",
+  "rateLimit": { "max": 3, "windowSeconds": 3600 },
+  "retentionDays": null,
+  "messages": {
+    "success": "You're on the waitlist.",
+    "duplicate": "You're already on the waitlist.",
+    "rateLimited": "Too many attempts. Please try again later."
+  },
+  "siteUrl": "https://example.com"
+}
