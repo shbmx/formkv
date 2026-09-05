@@ -18,7 +18,7 @@
     "dev": "tsc --watch",
     "typecheck": "tsc --noEmit",
     "formkv": "node dist/cli.js",
-    "test": "node --experimental-strip-types test/run.mjs",
+    "test": "node test/run.mjs",
     "coverage": "c8 --reporter=text --src=dist --exclude='test/**' --all node test/run.mjs"
   },
   "keywords": [

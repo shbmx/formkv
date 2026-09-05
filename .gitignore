@@ -3,3 +3,4 @@ dist/
 formkv.json
 formkv-worker.generated.js
 *.csv
+coverage/
